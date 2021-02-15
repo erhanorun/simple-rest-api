@@ -55,7 +55,7 @@ public class CustomerServiceImpl implements CustomerService {
                 .withQuery(range)
                 .build();
         List<SearchHit<CustomerDto>> customers = elasticsearchOperations.search(searchQuery, CustomerDto.class, IndexCoordinates.of("customer")).getSearchHits();
-        return customers.stream().map(customer -> customer.getContent()).collect(Collectors.toList());
+        return customers.stream().map(SearchHit::getContent).collect(Collectors.toList());
     }
 
     private CustomerDto convertToUserDto(Customer customUser) {
