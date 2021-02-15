@@ -1,8 +1,8 @@
-# Create User
+# Create Customer
 
-Post user with `username`.
+Post user with `customer_name`.
 
-**URL** : `/api/user`
+**URL** : `/api/customers`
 
 **Method** : `POST`
 
@@ -21,11 +21,11 @@ Post user with `username`.
 
 **Code** : `200 OK`
 
-# Users
+# Customers
 
 User listing page.
 
-**URL** : `/api/user`
+**URL** : `/api/customer`
 
 **Method** : `GET`
 
@@ -46,11 +46,11 @@ User listing page.
 
 
 
-# User
+# Customer
 
-Get a user  by `user_id`.
+Get a user  by `customer_id`.
 
-**URL** : `/api/user/:user_id`
+**URL** : `/api/customer/:customer_id`
 
 **Method** : `GET`
 
@@ -62,6 +62,55 @@ Get a user  by `user_id`.
 ```json
 {
   "Content-Type": "application/json"
+}
+```
+
+## Success Response
+
+**Code** : `200 OK`
+
+
+# Search Customer
+
+Filter a customer by `name` or `age`.
+
+**URL** : `/api/customer/:customer_id`
+
+**Method** : `GET`
+
+**Auth required** : `No`
+
+**Permissions required** : `None`
+
+**Headers** :
+```json
+{
+  "Content-Type": "application/json"
+}
+```
+
+## Success Response
+
+**Code** : `200 OK`
+
+
+
+# Create Order
+
+Post order with `name`.
+
+**URL** : `/api/orders`
+
+**Method** : `POST`
+
+**Auth required** : `No`
+
+**Permissions required** : `None`
+
+**Headers** :
+```json
+{
+    "Content-Type": "application/json"
 }
 ```
 

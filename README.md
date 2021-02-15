@@ -15,12 +15,19 @@ Sample Requests can be found under src/main/resources and can be imported into P
 
 ## API Documentation
 
-* [Post user](/api.md): `Post /user`
-* [Get User](/api.md) : `GET /user`
-* [Get Users](/api.md) : `GET /All user`
+* [Post customer](/api.md): `Post /customer`
+* [Get customer](/api.md) : `GET /customer`
+* [Get customers](/api.md) : `GET /All customer`
+* [Search](/api.md) : `GET /search`
+
+* [Post order](/api.md): `Post /order`
+* [Get order](/api.md) : `GET /order`
+* [Get orders](/api.md) : `GET /All order`
 
 ## Purpose 
-My purpose is to create a simple REST api for user creation and listing.
+My purpose is to create a simple REST api for customer and order creation and listing.
+There is a one to many relationship between the customer and its orders.
+In addition, search endpoint has been added. This endpoint provides filtering capacity for customer name and age.
 The application is running on `http://localhost:8080`.
 You can test the api with `Postman` according to the above documentation.
 
