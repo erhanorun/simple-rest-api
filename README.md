@@ -15,14 +15,14 @@ Sample Requests can be found under src/main/resources and can be imported into P
 
 ## API Documentation
 
-* [Post customer](/api.md): `Post /customer`
-* [Get customer](/api.md) : `GET /customer`
-* [Get customers](/api.md) : `GET /All customer`
+* [Post customer](/api.md): `Post /api/customers`
+* [Get customer](/api.md) : `GET /api/customers`
+* [Get customers](/api.md) : `GET /api/All customers`
 * [Search](/api.md) : `GET /search`
 
-* [Post order](/api.md): `Post /order`
-* [Get order](/api.md) : `GET /order`
-* [Get orders](/api.md) : `GET /All order`
+* [Post order](/api.md): `Post /api/orders`
+* [Get order](/api.md) : `GET /api/orders`
+* [Get orders](/api.md) : `GET /api/All orders`
 
 ## Purpose 
 My purpose is to create a simple REST api for customer and order creation and listing.

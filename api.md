@@ -25,7 +25,7 @@ Post user with `customer_name`.
 
 User listing page.
 
-**URL** : `/api/customer`
+**URL** : `/api/customers`
 
 **Method** : `GET`
 
@@ -46,11 +46,11 @@ User listing page.
 
 
 
-# Customer
+# Customers by ID
 
 Get a user  by `customer_id`.
 
-**URL** : `/api/customer/:customer_id`
+**URL** : `/api/customers/:customer_id`
 
 **Method** : `GET`
 
@@ -74,7 +74,7 @@ Get a user  by `customer_id`.
 
 Filter a customer by `name` or `age`.
 
-**URL** : `/api/customer/:customer_id`
+**URL** : `/api/customers/:customer_id`
 
 **Method** : `GET`
 
@@ -97,7 +97,7 @@ Filter a customer by `name` or `age`.
 
 # Create Order
 
-Post order with `name`.
+Post order with `order_name`.
 
 **URL** : `/api/orders`
 
@@ -111,6 +111,54 @@ Post order with `name`.
 ```json
 {
     "Content-Type": "application/json"
+}
+```
+
+## Success Response
+
+**Code** : `200 OK`
+
+
+# Orders
+
+Post order with `orders`.
+
+**URL** : `/api/orders`
+
+**Method** : `GET`
+
+**Auth required** : `No`
+
+**Permissions required** : `None`
+
+**Headers** :
+```json
+{
+    "Content-Type": "application/json"
+}
+```
+
+## Success Response
+
+**Code** : `200 OK`
+
+
+# Orders by ID
+
+Get a user  by `order_id`.
+
+**URL** : `/api/orders/:order_id`
+
+**Method** : `GET`
+
+**Auth required** : `No`
+
+**Permissions required** : `None`
+
+**Headers** :
+```json
+{
+  "Content-Type": "application/json"
 }
 ```
 
